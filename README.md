@@ -7,3 +7,4 @@ Once it is installed on your system, you can run the file as usual.
 The sudoku puzzle that is inside the file can be seen in the repository under "SudokuTestPuzzle.jpg", or here:
 
 ![Sudoku Test Puzzle](/SudokuTestPuzzle.jpg)
+Source: The Guardian, https://www.theguardian.com/lifeandstyle/2019/nov/18/sudoku-4612-easy

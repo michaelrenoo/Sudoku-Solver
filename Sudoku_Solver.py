@@ -27,7 +27,6 @@ def possible_answer(y, x, num):
                 return False
     return True  # if num is not in any of the requirements above, then the number might be the correct answer
 
-
-
-
 print(np.matrix(sudoku))
+possible_answer(4, 5, 2)
+

@@ -50,10 +50,12 @@ def solve_sudoku():  # no parameter because global variable will be used
                 for n in range(1, 10):  # iterate through every possible numbers from 1 to 9
                     if possible_answer(y, x, n):  # check if True is returned
                         sudoku[x][y] = n  # assign n as the answer in the list
-                        solve_sudoku()  # recursion so the function runs again until every 0 is assigned to a number
+                        if solve_sudoku():  # recursion so the function runs again until every 0 is assigned to a number
+                            return True
                         sudoku[x][y] = 0  # if there is no possible answer (wrong input or something)
-                    return  # so it goes back (out of the if command)
+    return True  # so it goes back (out of the if command)
     print(np.matrix(sudoku))  # print the completed sudoku
 
-# solve_sudoku()
+solve_sudoku()
+print(np.matrix(sudoku))
 print(possible_answer(5, 4, 4))
